@@ -56,20 +56,20 @@ body {
 /* ========================================================== */
 
 .search-input {
-  background-color: white;
+  background-color: rgb(245, 245, 245);
   border-radius: 3rem;
   display: flex;
   margin-top: 0.75rem;
   margin-inline: 0.25rem;
-  height: 3.2rem;
-  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+  height: 3rem;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
 }
 .search-input button {
   aspect-ratio: 1/1;
   outline: none;
   border: none;
   background: none !important;
-  font-size: large;
+  /* font-size: large; */
 }
 .search-input input {
   /* font-weight: bold; */
