@@ -5,6 +5,7 @@
 }
 body {
   background-color: #f4f4f4;
+  font-family: montserrat;
 }
 .container {
   padding-inline: 0.75rem;
@@ -59,6 +60,7 @@ body {
   border-radius: 3rem;
   display: flex;
   margin-top: 0.75rem;
+  margin-inline: 0.25rem;
   height: 3.2rem;
 }
 .search-input button {
