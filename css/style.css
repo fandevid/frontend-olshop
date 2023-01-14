@@ -54,12 +54,13 @@ body {
 }
 
 /* ========================================================== */
-
+header {
+  background-color: #fff;
+}
 .search-input {
   background-color: rgb(245, 245, 245);
   border-radius: 3rem;
   display: flex;
-  margin-top: 0.75rem;
   margin-inline: 0.25rem;
   height: 3rem;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
@@ -83,3 +84,25 @@ body {
 }
 
 /* ==================================================== */
+.categories {
+  margin-top: 1.5rem;
+  display: flex;
+  overflow-x: auto;
+  gap: 0.4rem;
+}
+.categories button {
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  background-color: rgba(137, 43, 226, 0.1);
+  border: 1px solid blueviolet;
+  outline: none;
+  transition: 250ms;
+}
+
+.categories button:hover {
+  background-color: rgba(137, 43, 226, 0.3);
+}
+.categories button.active {
+  background-color: blueviolet;
+  color: white;
+}
