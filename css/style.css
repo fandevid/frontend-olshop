@@ -7,7 +7,7 @@ body {
   background-color: #f4f4f4;
 }
 .container {
-  padding-inline: 0.5rem;
+  padding-inline: 0.75rem;
 }
 
 .navbar {
@@ -68,10 +68,11 @@ body {
   background: none !important;
 }
 .search-input input {
+  font-weight: bold;
   background: none !important;
   width: 100%;
   padding-right: 1rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
   border: none;
   outline: none;
 }
