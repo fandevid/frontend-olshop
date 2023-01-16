@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #cacaca;
+  background-color: #dadada;
   font-family: montserrat;
 }
 .container {
@@ -127,10 +127,11 @@ header {
   border-radius: 7px;
   padding: 0.5rem;
   /* width: 100%; */
+  transition: 0.3s;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 .product:hover {
-  background-color: rgb(220, 220, 220);
+  background-color: rgb(240, 240, 240);
 }
 .product .product-img {
   border-radius: 7px;
