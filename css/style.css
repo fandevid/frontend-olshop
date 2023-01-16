@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #dadada;
+  background-color: #eee;
   font-family: montserrat;
 }
 .container {
@@ -61,7 +61,7 @@ header {
   background-color: #fff;
 }
 .search-input {
-  background-color: #dadada;
+  background-color: #eeeeee;
   border-radius: 3rem;
   display: flex;
   margin-inline: 0.25rem;
@@ -117,12 +117,15 @@ header {
 .products {
   margin-top: 1rem;
   display: grid;
-  /* gap: 5px; */
-  grid-template-columns: repeat(auto-fit, minmax(50%, 10rem)) !important;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)) !important;
+}
+.products > div {
+  /* max-width: 15rem; */
 }
 .product {
   /* overflow: hidden; */
-  margin: 2.5px;
+  /* margin: 2.5px; */
   background-color: white;
   border-radius: 7px;
   padding: 0.5rem;
@@ -131,14 +134,14 @@ header {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 .product:hover {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(235, 235, 235);
 }
+
 .product .product-img {
   border-radius: 7px;
   overflow: hidden;
 }
 .product:hover .product-image {
-  /* position: absolute; */
   transform: scale(1.1);
 }
 
