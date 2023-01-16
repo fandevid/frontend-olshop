@@ -4,17 +4,20 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #f4f4f4;
+  background-color: #cacaca;
   font-family: montserrat;
 }
 .container {
   padding-inline: 0.75rem;
 }
+button {
+  font-family: inherit;
+}
 
 .navbar {
   /* background-color: blueviolet; */
   /* color: white; */
-  position: absolute;
+  position: fixed;
   bottom: 0;
   display: flex;
   width: 100%;
@@ -58,7 +61,7 @@ header {
   background-color: #fff;
 }
 .search-input {
-  background-color: rgb(245, 245, 245);
+  background-color: #dadada;
   border-radius: 3rem;
   display: flex;
   margin-inline: 0.25rem;
@@ -90,6 +93,9 @@ header {
   overflow-x: auto;
   gap: 0.4rem;
 }
+.categories::-webkit-scrollbar {
+  visibility: hidden;
+}
 .categories button {
   border-radius: 0.2rem;
   padding: 0.5rem;
@@ -105,4 +111,75 @@ header {
 .categories button.active {
   background-color: blueviolet;
   color: white;
+}
+
+/* ========================================= */
+.products {
+  margin-top: 1rem;
+  display: grid;
+  /* gap: 5px; */
+  grid-template-columns: repeat(auto-fit, minmax(50%, 10rem)) !important;
+}
+.product {
+  /* overflow: hidden; */
+  margin: 2.5px;
+  background-color: white;
+  border-radius: 7px;
+  padding: 0.5rem;
+  /* width: 100%; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.product:hover {
+  background-color: rgb(220, 220, 220);
+}
+.product .product-img {
+  border-radius: 7px;
+  overflow: hidden;
+}
+.product:hover .product-image {
+  /* position: absolute; */
+  transform: scale(1.1);
+}
+
+.product-image {
+  transition: 0.3s;
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.product-info h5 {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  /* font-size: larger; */
+}
+
+.product .btns {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 3px;
+}
+
+.product .btns button:first-child {
+  width: 100%;
+  background-color: blueviolet !important;
+}
+.product .btns button {
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  /* background-color: cyan; */
+  /* padding: 0.5rem 1rem; */
+  padding: 0.375rem 0.75rem;
+}
+
+.product-price {
+  margin-top: 0.3rem;
+  color: blue;
+  font-weight: 900;
+}
+
+button:hover {
+  filter: brightness(90%);
 }
